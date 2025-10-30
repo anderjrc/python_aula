@@ -11,5 +11,6 @@ limite_credito = salario - (salario * 0.30)
 #teste
 print(f"{limite_credito}")
 print("OLÁ")
+print("oi")
 #print(f"{valor_parcela:.2f}")
 #1.150
