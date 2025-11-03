@@ -6,5 +6,16 @@ valor_casa = float(input('Qual o valor da casa que deseja comprar: R$ '))
 salario = float(input('Informe seu salário: R$ '))
 anos_pagamento = int(input('Informe em quantos anos deseja pagar: '))
 
-valor_parcela = valor_casa / (anos_pagamento * 12) #calculo valor da parcela
-limite_credito = salario - (salario * 0.30)
+prestacao = valor_casa / (anos_pagamento * 12) #calculo valor da parcela
+minimo = salario * 0.30 #calculando o mínimo de 30% do salário
+
+if prestacao <= minimo:
+    print(f"Para pagar uma casa de R$ {valor_casa:.2f} em {anos_pagamento} a prestação será de {prestacao:.2f}\n"
+    f"Empréstimo CONCEDIDO!")
+else:
+    print(f"Para pagar uma casa de R$ {valor_casa:.2f} em {anos_pagamento} a prestação será de R$ {prestacao:.2f}\n"
+    f"Empréstimo NEGADO!")
+
+
+
+
